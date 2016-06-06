@@ -1,7 +1,7 @@
 # coursera-test
 For Coursera Class () 
 
-## Links ## 
+## Links ##
 * GH Pages: http://rmavery.github.io/coursera-test/
  
 ## Git Commands ##
