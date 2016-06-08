@@ -3,6 +3,8 @@ For Coursera Class ()
 
 ## Links ##
 * GH Pages: http://rmavery.github.io/coursera-test/
+* Validator: https://validator.w3.org
+* 
  
 ## Git Commands ##
 * Git Clone https://github.com/rmavery/coursera-test.git
@@ -10,4 +12,5 @@ For Coursera Class ()
 * Git Pull
 
 ## Browser Sync Commands ##
+Apparently this needs to be run in NodeJS command window (maybe not on MAC) 
 * Browser Sync Command: browser-sync start --server --directory --files "*"
