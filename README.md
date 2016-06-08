@@ -5,8 +5,8 @@ For Coursera Class ()
 * GH Pages: http://rmavery.github.io/coursera-test/
 
 * Standard: 
-* Can I Use: https://caniuse.com 
-** Tells you which browser supports what
+* Can I Use: https://caniuse.com
+ -- Tells you which browser supports what
 * Validator: https://validator.w3.org
 * W3C Schools: http://www.w3schools.com/browsers/browsers_stats.asp
 * Search Engine: http://www.google.com 
