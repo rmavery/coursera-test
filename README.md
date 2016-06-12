@@ -36,7 +36,7 @@ Apparently this needs to be run in NodeJS command window (maybe not on MAC)
 Examples: div-and-span.html 
 * <div> is generic block element (new line before and after this tag)
 * <span> generic inline element 
-* http://www.w3.org/TR/html5/don.html#kinds-of-content shows all content types. 
+* http://www.w3.org/TR/html5/dom.html#kinds-of-content shows all content types. 
 
 
 :relieved:
