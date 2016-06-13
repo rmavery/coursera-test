@@ -53,7 +53,7 @@ These don't really provide any additional formatting, but they're block level ta
 * Header information about the page
 * Navigation
 * Company Logo
-### <Section> Tag
+### %gt;Section&lt; Tag
 * May contains <Article> elements 
 * <Article> could have a <Section> tag within it 
 ### <Aside> Tag 
