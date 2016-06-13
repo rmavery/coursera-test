@@ -61,5 +61,12 @@ These don't really provide any additional formatting, but they're block level ta
 ### &lt;Footer&gt; Tag 
 * 
 
+## HTML Lists 
+* The only thing allowed inside a &lt;UL&gt; or &lt;OL&gt; tag is an &lt;LI&gt; tag.  
+* &lt;UL&gt; created a bulleted list
+* &lt;OL&gt; creates a numbered list
+
+ 
+
 
 :relieved:
