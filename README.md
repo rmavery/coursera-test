@@ -34,31 +34,31 @@ Apparently this needs to be run in NodeJS command window (maybe not on MAC)
 
 ### HTML5 Replaces definitions of elements
 Examples: div-and-span.html 
-* <div> is generic block element (new line before and after this tag)
-* <span> generic inline element 
+* <div&gt; is generic block element (new line before and after this tag)
+* <span&gt; generic inline element 
 * https://www.w3.org/TR/html5/dom.html#kinds-of-content shows all content types. 
 
 ## Heading Elements 
 ### Semantic HTML element
 * Implies some meaning to content 
 * May help SEO
-### Headings <hx>
+### Headings <Hx&gt;
 * Although these do render with visual distinction, you should not use for visual styling 
 * Heading tags convey the central topic of the content
 
 
 ## Semantic Elements (Inherently convey some meaning) 
-These don't really provide any additional formatting, but they're block level tags, and give approximately the same functionality as a <div> or a <span> tag.  
-### <Header> tag 
+These don't really provide any additional formatting, but they're block level tags, and give approximately the same functionality as a &lt;div&gt; or a &lt;span&gt; tag.  
+### &lt;Header&gt; tag 
 * Header information about the page
 * Navigation
 * Company Logo
-### %gt;Section&lt; Tag
-* May contains <Article> elements 
-* <Article> could have a <Section> tag within it 
-### <Aside> Tag 
+### &lt;Section&gt; Tag
+* May contains &lt;Article&gt; elements 
+* &lt;Article&gt; could have a &lt;Section&gt; tag within it 
+### &lt;Aside&gt; Tag 
 * Content indirectly related to the main content of the page 
-### <Footer> Tag 
+### &lt;Footer&gt; Tag 
 * 
 
 
