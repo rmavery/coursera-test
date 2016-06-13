@@ -36,7 +36,30 @@ Apparently this needs to be run in NodeJS command window (maybe not on MAC)
 Examples: div-and-span.html 
 * <div> is generic block element (new line before and after this tag)
 * <span> generic inline element 
-* http://www.w3.org/TR/html5/dom.html#kinds-of-content shows all content types. 
+* https://www.w3.org/TR/html5/dom.html#kinds-of-content shows all content types. 
+
+## Heading Elements 
+### Semantic HTML element
+* Implies some meaning to content 
+* May help SEO
+### Headings <hx>
+* Although these do render with visual distinction, you should not use for visual styling 
+* Heading tags convey the central topic of the content
+
+
+## Semantic Elements (Inherently convey some meaning) 
+These don't really provide any additional formatting, but they're block level tags, and give approximately the same functionality as a <div> or a <span> tag.  
+### <Header> tag 
+* Header information about the page
+* Navigation
+* Company Logo
+### <Section> Tag
+* May contains <Article> elements 
+* <Article> could have a <Section> tag within it 
+### <Aside> Tag 
+* Content indirectly related to the main content of the page 
+### <Footer> Tag 
+* 
 
 
 :relieved:
