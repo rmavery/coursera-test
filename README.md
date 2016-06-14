@@ -67,11 +67,31 @@ These don't really provide any additional formatting, but they're block level ta
 * &lt;OL&gt; creates a numbered list
 
 ## Character Entity References
-* Characters that always need to be escaped 
-** &lt; 
-** &gt; 
-** &amp; 
-* 
+* Characters that always need to be escaped
+-- &lt; 
+-- &gt; 
+-- &amp; 
+* Other Entity references 
+-- & copy ; = &copy; 
+-- & nbsp ; = &nbsp; 
+-- & quot ; = &quot; 
+* Do not use the nbsp for additional spaces.   
+-- Wrap in a span tag and then apply margin to move it further from the other word. 
+
+## Creating Links
+* Link is an 'a' element with a value of 'href' 
+* Browser will assume file is in same directory unless directory information is provided
+* You should always provide a 'title' attribute for visually impaired users 
+* You can put a &lt;div&gt; inside an 'a' tag because an 'a' tag is both an inline and a block level element
+* External link points to a resource not within your site (usually hosted on a different domain name than your web) 
+* _target attribute lets you determine if you want to open the tab in your window _self or another window _blank 
+* A Fragment identifier is a href=# with a pound sign in front of the identifier.  
+-- You can use &lt;section ="sectionName"&gt; to identify the fragment
+-- You can create another anchor &lt;a name="sectionName" &gt; 
+* If you have a fragment identifier in your URL, you can send that URL to a friend which will take them right to that section. 
+* They have become more important because they are used to identify markers in a SPA (Single Page Application) 
+
+ 
 
 
 
