@@ -66,7 +66,13 @@ These don't really provide any additional formatting, but they're block level ta
 * &lt;UL&gt; created a bulleted list
 * &lt;OL&gt; creates a numbered list
 
- 
+## Character Entity References
+* Characters that always need to be escaped 
+* * &lt; 
+* * &gt; 
+* * &amp; 
+* 
+
 
 
 :relieved:
