@@ -68,9 +68,9 @@ These don't really provide any additional formatting, but they're block level ta
 
 ## Character Entity References
 * Characters that always need to be escaped 
-* * &lt; 
-* * &gt; 
-* * &amp; 
+** &lt; 
+** &gt; 
+** &amp; 
 * 
 
 
