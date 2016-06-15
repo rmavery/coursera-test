@@ -91,7 +91,17 @@ These don't really provide any additional formatting, but they're block level ta
 * If you have a fragment identifier in your URL, you can send that URL to a friend which will take them right to that section. 
 * They have become more important because they are used to identify markers in a SPA (Single Page Application) 
 
- 
+## Displaying Images
+* Using the &lt;img tag
+* Add a 'src=' with a pointer to the file
+* The %lt;img tag is an 'inline' element
+* Images are used as a visual anchor in your page.  
+* Use the 'witdh=' and 'height=' tags so the page knows how to set aside the space for the images before it's loaded.  
+* You can use the Chrome Tools 'Network (Throttling)' to demonstrate a slow internet connection. 
+* Also, if you have a broken image the visual spacing will still be correct if you put the size
+
+
+
 
 
 
