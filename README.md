@@ -3,6 +3,7 @@ For Coursera Class (https://github.com/jhu-ep-coursera/fullstack-course4)
 
 ## Links ##
 * GH Pages: http://rmavery.github.io/coursera-test/
+* CSS Zengarden: http://www.csszengarden.com 
 
 * Standard: 
 * Can I Use: https://caniuse.com
@@ -101,6 +102,23 @@ These don't really provide any additional formatting, but they're block level ta
 * Also, if you have a broken image the visual spacing will still be correct if you put the size
 
 
+## Power of CSS
+Users absorb and relate to content by the experience of how they consumed it.  Structure alone, for that reason is not enough. 
+* CSS is an incredibly powerful technology
+* User experience of content matters
+
+## Anatomy of a CSS Rule 
+* Selector (p) followed by open and close curly braces
+* The whole selector{} is called a 'Declaration'
+* Inside the braces, is a 'Property' and a 'Value' 
+* Separated by a Colon, and followed by a Semi-Colon
+* Zero or more declarations is allowed
+* Collection of rules is called a 'StyleSheet' 
+
+## Element, Class, and ID Selectors
+* Javascript libraries use the browser select API to attach behavior and data to elements in much the same way as CSS attaches style to those selectors. 
+* Element Selector (selects elements, e.g, &lt;p&gt;) 
+* 
 
 
 
