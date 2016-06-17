@@ -118,9 +118,14 @@ Users absorb and relate to content by the experience of how they consumed it.  S
 ## Element, Class, and ID Selectors
 * Javascript libraries use the browser select API to attach behavior and data to elements in much the same way as CSS attaches style to those selectors. 
 * Element Selector (selects elements, e.g, &lt;p&gt;) 
-* 
+* Class Selector (begins with a . and then the name of the class) 
+* ID Selector (begins with a # and the name of the ID) (ID must be unique on the page) (case sensitive)
+* Grouping Selector (div, .blue{ color:blue;} will affect any div tag, AND any class="blue") 
+
+
 
 
 
 
 :relieved:
+:confused:
