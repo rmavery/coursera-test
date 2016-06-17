@@ -122,7 +122,36 @@ Users absorb and relate to content by the experience of how they consumed it.  S
 * ID Selector (begins with a # and the name of the ID) (ID must be unique on the page) (case sensitive)
 * Grouping Selector (div, .blue{ color:blue;} will affect any div tag, AND any class="blue") 
 
+## Combining Selectors
+* Element with class selector p.big (Element &lt;p class="big" &gt;) 
+* Direct Child selector (Selector followed by article &gt; p ) (Any &lt;p&gt; directly following the the &lt;article&gt;) 
+* Descendent Selector (SelectorA [sp] SelectorB) every descendent SelectorB (not only direct child) of SelectorA
+* You can assign multiple classes to a single element by listing with a space between them. 
+* .highlight.mainpoint requires that the element has both classes 'highlight' and 'mainpoint' assigned to it.  
+* Also Lookup... 
+* -- Adjacent Sibling Selector
+* -- General Sibling Selector
 
+## Pseudo-Class Selectors
+Style based on user interaction with an element
+* Selector:pseudo-class name, e.g, {:link, :visited, :hover, :active., nth-child(...)} 
+* Style unordered list as a menu
+* -- list-syle: none; 
+* -- text-decoration: none;
+* -- background-color:green;
+* -- border: 1px solid blue; 
+* -- color: black;
+* -- display: block; (will try to fill up the line) 
+* -- text-align: center; 
+* -- width:200px;
+* -- margin-bottom: 1px; 
+* a:hover, a:active {background-color:red; color:purple; } 
+* header li:nth-child(3){ will affect the third child LI} 
+* section div:nth-child(odd){modifies every other div)
+* section div:nth-child(4):hover{background-color:green; cursor:pointer;) 
+* Make sure your selector is still readable or you'll end up with a maintenance nightmare
+
+ 
 
 
 
