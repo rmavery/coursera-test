@@ -224,10 +224,48 @@ body {
 <div>Regular Text</div>
 <div style="font-size: 2em;">2em text
   <div style="font-size: 2em;">4em text (2em * 2em)
-    <div>2em again!</div>
+    <div style="font-size: .5em;">2em again! (1/2 the size)</div>
   </div>
 </div>
 ```
+* When a user increases the zoom, relative sizes will increase together. 
+
+
+## The Box Model
+* Each box consists of padding, border, margin, width, height, content
+```
+<style>
+body { 
+  background-color: gray;
+  }
+  #box {
+   background-color: blue; 
+   padding: 10px 10px 10px 10px; /* Top, Right, Bottom, Left */ 
+   border: 5px solid black; 
+   margini: 40px; 
+   width: 300px; 
+  } 
+  /* The above box will be 300 + 10px + 10px + 5px + 5px.  minimum wide.  You are actually setting the 'width' of the content */ 
+  #content {
+    background-color: #90EE90; //Green
+  }
+</style>
+<div id="box"> 
+  <div id="content"> Lorem Ipsum dolor sit amet, consectetur adipisicing elit.</div>
+</div> 
+```
+* If you look at this page, you'll see 8px of gray around the box.  If you examine the element, you'll see that it's coming from the 'user agent stylesheet' (which is the browser itself) 
+* To reset ... 
+``` 
+body { 
+ margin: 0; 
+ padding: 0; 
+}
+
+```
+* CSS3 has
+``` box-sizing: border-box; (vs content box) which ensures the box size is the width/height ``` 
+
 
 
 
