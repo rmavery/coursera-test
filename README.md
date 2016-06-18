@@ -192,7 +192,9 @@ Cascading is an algorithm defining how to combine properties values from differe
 * !important is worth a bazillion points, because it overrides everything else. 
 * While it's tempting to use !important, but it's a code smell, and will be a maintenance nightmare
 
-## Styling Text : http://www.w3schools.com/cssref/css_websafe_fonts.asp
+## Styling Text
+* http://www.w3schools.com/cssref/css_websafe_fonts.asp
+* 
 ```
 <style>
 .style { 
@@ -205,18 +207,27 @@ Cascading is an algorithm defining how to combine properties values from differe
   text-align: right; 
  </style> 
  ```
+ 
  * Relative Font Sizing
- &lt;style&gt;
- 
+```
+<style>
 body { 
-
+ font-size: 120%;
 }
-&lt;/style&gt;
- 
- 
+</style>
+```
+* em is a unit of measurement equivalent to the letter M in the text.  
+* 2em wuold be a font twice the size of the rest of the text.  
+* Relative font-sizes don't have an 'overriding' effect, but rather a cumulative effect
 
-}
-
+``` 
+<div>Regular Text</div>
+<div style="font-size: 2em;">2em text
+  <div style="font-size: 2em;">4em text (2em * 2em)
+    <div>2em again!</div>
+  </div>
+</div>
+```
 
 
 
