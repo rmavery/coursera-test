@@ -151,7 +151,71 @@ Style based on user interaction with an element
 * section div:nth-child(4):hover{background-color:green; cursor:pointer;) 
 * Make sure your selector is still readable or you'll end up with a maintenance nightmare
 
+## Style Placement
+* Inline Styling - Added directly to the tags (Least reusable, Least Preferred)
+* In head tag - not helpful for other pages
+* External style sheet - Most reusable, preferred
+* -- Just styles on a sheet, doesn't require any specific wrapping to identify the page as a CSS
+* In a real world website, you almost always want your styles outside of your sheet. 
+* Head styles are most often just used to override external styles
+
+## Conflict Resolution
+Cascading is an algorithm defining how to combine properties values from different sources.  (Using a cascade algorithm) 
+* Origin, Merge, Inheritence, Specificity
+* Origin precedence rule (Last Declaration Wins).  
+* -- HTML is processed top to bottom.  The lower on the page, the more precedence it has. 
+* Merge is when two selectors are attributed to a single element, but different attributes
+* -- When no conflict, e.g, Font-Size and Color, they will merge
+* Inheritance - DOM Tree
+* Body >> Element >> Element -- All children of a body tag
+```
+ body {
+ color: red;
+ text-align: center; 
+ font-family: Helvetica;
+ }
+ ```
+*  p { color: blue;} (body attributes will be hit unless it's a P element
+* Specificity - Most specific selector wins
+* Style = "...", ID, Class, Pseudo-class, Attribute, # of Element
+* 1.) Style (1000 points each)
+* 2.) ID    (100 points each) 
+* 3.) Class, Pseudo-class, Attribute  (10 points each) 
+* 4.) # of Element  (1 point each) 
+
+| Style | ID | Class, etc. | # Element | 
+|----------|----------|----------|---------|
+| 1000 | 100 | 10 | 1 | 
+
+* Count the number of instances of each, and put them in left to right order as 'Style', 'ID', 'Class, etc', # of Element
+* Total the number of each, and then that results in a number.  Highest score wins
+* !important is worth a bazillion points, because it overrides everything else. 
+* While it's tempting to use !important, but it's a code smell, and will be a maintenance nightmare
+
+## Styling Text : http://www.w3schools.com/cssref/css_websafe_fonts.asp
+```
+<style>
+.style { 
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0000ff;
+  font-style: italic; 
+  font-weight: bold;
+  font-size: 24px; /* Default would usually be 16px */ 
+  text-transform: capitalize; 
+  text-align: right; 
+ </style> 
+ ```
+ * Relative Font Sizing
+ &lt;style&gt;
  
+body { 
+
+}
+&lt;/style&gt;
+ 
+ 
+
+}
 
 
 
