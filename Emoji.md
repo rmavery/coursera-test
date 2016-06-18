@@ -1,4 +1,5 @@
-== People
+##People
+-----
 
 :bowtie:
 :smile:
@@ -195,8 +196,8 @@
 :suspect:
 :trollface:
 
-== Nature
-
+##Nature
+-----
 :sunny:
 :umbrella:
 :cloud:
@@ -313,8 +314,8 @@
 :octocat:
 :squirrel:
 
-== Objects
-
+##Objects
+-----
 :bamboo:
 :gift_heart:
 :dolls:
@@ -576,8 +577,8 @@
 :tomato:
 :corn:
 
-== Places
-
+##Places
+-----
 :house:
 :house_with_garden:
 :school:
