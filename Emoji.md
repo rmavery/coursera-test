@@ -686,8 +686,8 @@
 :uk:
 :de:
 
-== Symbols
-
+##Symbols
+-----
 :one:
 :two:
 :three:
