@@ -265,7 +265,93 @@ body {
 ```
 * CSS3 has
 ``` box-sizing: border-box; (vs content box) which ensures the box size is the width/height ``` 
+* box-sizing  is not an inherited property.  
+* You can however use the * selector 
+```
+* { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+  ``` 
+  Will apply box-sizing: border-box to every element 
+  ### Cumulative Margins 
+  * If you have a 40px on the right box, and 50px on the right, you'll have a 90px 
+  * Top and bottom however, will collapse, and the larger margin will win
+  
+*Look up the Emmit plugin* 
+* Dealing with 'Overflow' - by default, the overflow is visible.  You can make it 'hidden', 'auto'
+* Users absolutely hate double scrolling except for things like long legal documents, e.g, terms of service
+* 
 
+## Background Property
+```
+#bg{
+ width: 500px;
+ height: 500px;
+ background-color: blue; 
+ background-image: url("relative_to_css.jpg"); 
+ background-position: top right;
+}
+```
+
+## Position Elements by Floating
+* Most designs today are done by floating
+* When you float an element, the browser takes them out of the regular document flow
+* For Floated elements, the margin on the top never collapses
+* To make sure you resume the document properties, you can use the 'clear' attribute. 
+* When floated elements can't fit on the same line, they get pushed to the next line 
+
+
+## Relative and Absolute Element Positioning
+* Static positioning is the default document flow
+* Relative positioning is relative to it's position on the normal document flow
+* Relative positioioning DOES NOT take it out of the normal document flow.   
+* If the element is moved, the DOM still preserves the previous location of the element
+* You can also use negative values for the offset
+
+* *Absolute* 
+* All offsets (top, bottom, left, right) are relative to the position of the nearest anchor which has positioning set on it, other than static. 
+* By Default HTML is the only element that has non-static positioning set on it (relative) 
+* Element is taken out of normal document flow 
+* Absolute will be taken out of the document flow
+* If you have a container element that is offset, then anything inside of it is offset right along with it if relative
+
+## Media Queries 
+* sets styles based on the media on which the web page is being displayed 
+* Media queries start with @media, and are followed by a media feature, and contains the styles
+* If the media-query (feature) resolves to 'TRUE' then the styles will be in effect 
+* Most common is (max-width) and (min-width) 
+* You can also use logical operators, e.g, @media (min-width: 768px) and (max-width: 991px) {...}
+* A comma between two queries, is seen as an 'or' operator. 
+* It's common to have some base styles, and then only modify base styles on different screen sizes
+* DO NOT overlap range boundaries (break points) in your media queries
+```
+@media (max-width: 767px) {
+  p{
+     color: blue; 
+   } 
+ } 
+```
+* Standard width ranges are in the twitter bootstrap documentation
+
+## Responsive Design
+* Beginning around 2013, browsing on a mobile device outnumbers browsing on a desktop or laptop
+* Site designed to adapt it's layout to the viewing environment by using fluid, proportion-based grids, flexible images, and CSS3 media queries 
+* Content is like water.   The content should become the container.  
+* Sites layout adapts to the size of the device
+* Content verbosity or it's visual delivery may change 
+* Alternatives, are a server side agent that detects what kind of device it is, and then serves up different web sites based on the type of device. 
+* Most common responsive layout is a 12-column grid 
+* 12 is used because it's easily divisible by 2,3,4,6 and 12
+* 1 column is 1/12 or 8.33% 
+* You can also nest a 12 column grid within your grids
+
+
+
+
+
+  
 
 
 
