@@ -346,6 +346,10 @@ body {
 * 12 is used because it's easily divisible by 2,3,4,6 and 12
 * 1 column is 1/12 or 8.33% 
 * You can also nest a 12 column grid within your grids
+* You have to tell the browser that your website is 'Responsive' (using the 'Viewport' metatag) 
+```<meta name="viewport" content="width=device-width, initial-scale=1">``` 
+
+
 
 
 
