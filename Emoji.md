@@ -1,9 +1,6 @@
 ##People
------
-
 :bowtie:
 :smile:
-:simple_smile:
 :laughing:
 :blush:
 :smiley:
@@ -197,7 +194,6 @@
 :trollface:
 
 ##Nature
------
 :sunny:
 :umbrella:
 :cloud:
@@ -315,7 +311,6 @@
 :squirrel:
 
 ##Objects
------
 :bamboo:
 :gift_heart:
 :dolls:
@@ -578,7 +573,6 @@
 :corn:
 
 ##Places
------
 :house:
 :house_with_garden:
 :school:
@@ -687,7 +681,6 @@
 :de:
 
 ##Symbols
------
 :one:
 :two:
 :three:
