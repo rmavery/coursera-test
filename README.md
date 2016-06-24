@@ -350,11 +350,47 @@ body {
 ```<meta name="viewport" content="width=device-width, initial-scale=1">``` 
 
 
-
-
-
-
-
+## Introduction to Twitter Bootstrap 
+* HTML, CSS, and Javascript Framework for developing responsive mobile first projects 
+* CSS needs to target a particular CSS structure
+* Javascript Framework based on JQuery 
+* Mobile First Framework 
+  * Content first 
+  * Plan for mobile, but you CAN plan for desktop first if it makes you more comfortable 
+  * Plan for mobile from the start 
+ * Complaints
+   * To big and bloated
+   * You can write your own that's more targeted and smaller
+ 
+## Bootstrap Grid System 
+* Grid REQUIRES that it be inside a 'container' or 'container-fluid' class. 
+* The 'row' class creates a negative margin to counteract the padding that the 'container' sets up.   
+  * This ensures that the left margin of content will align because the container will have margin padding.  It just makes things look slightly off. 
+* Column class = 'col-SIZE-SPAN' 
+  * Size = Screen width range identifier, sm = small, md = medium, lg = large
+  * Span = How many columns the value should span. 
+  * If your screen width goes below a particular screen size the column spans will collapse (stack on top of each other) 
+  * An element that pushes the total columns over 12 will automatically wrap to the next line
+  * 
+``` 
+<header class="container">
+   <nav class="row"> 
+       <div class="col-md-4">Col 1</div> 
+   </nav> 
+</header> 
+```
+* If you add 'col-md and col-sm in the same tag, you can have different column widths for different screen widths
+* All Columns must be inside a 'row' class
+* If no other rules apply, xs will ALWAYS keep the same layout no matter what size screen. 
+``` 
+<div class ="container-fluid">
+   <div class="row"> 
+       <div class="col-md-4 col-sm-6">Col 1</div> 
+       <div class="col-md-4 col-sm-6">Col 2</div>
+       <div class="col-md-4 col-sm-6">Col 3</div>
+   </div> 
+</div> 
+```
   
 
 
