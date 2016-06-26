@@ -40,3 +40,53 @@
 * Paste the 'font' link in your 'head' section where you put the css stuff. 
 
   
+## Coding Basics of Navbar Header 
+  * When you use 'BrowserSync' if you want to address all files and folders and everything inside the folders, you must use "**/*"
+  * Bootstrap will give you a 'Base' class, i.e., 'Navbar' and a subclass, i.e., 'navbar-default' 
+  * Look up the 'navbar-header' class.  It's specific and helpful, but requires that it be in a specific place.  
+    * https://www.getbootstrap.com/components/#navbar 
+  * Look up 'navbar-brand' class 
+  * Class 'pull-left' is basically 'float-left' 
+  * If you want elements to disappear on certain screen sizes, you can use the class 'visible-md' and 'visible-lg' 
+
+
+## Coding Button for Future Collapsable Menu
+* Take care of the 'mobile' view first.  The Hamburger view.  
+* The 'Navbar' Collapsed Class does not exist in the Bootstrap CSS.   This is done through .js in boostrap.js
+* class 'sr-only' is for 'Screen Reader' only. 
+* This has to be programmed using JavaScript, but Bootstrap has this programmed out of the box
+
+## Coding Nav Manu Buttons 
+* The 'button' has the 'data-target="#collapsable-nav"' which JS uses to identify the target 'id="collapsable-nav"' in the second div below.  
+* The div id="collapsable-nav" contains the content that should be made invisible unless the toggle button is clicked.  
+* The div id="collapsable-nav" has required classes 'collapse' and 'navbar-collapse' 
+```
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=#collapsable-nav" aria-expanded="false"> 
+ <span class="sr-only">Toggle Navigation</span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+</button> 
+
+<div id="collapsable-nav" class="collapse navbar-collapse">
+ <ul id="nav-list" class="nav navbar-nav navbar-right">
+  <li>
+  </li>
+ </ul> 
+</div> 
+```
+* Media Queries
+```
+/****************** Large devices Only **************/
+@media (min-width: 1200px) {
+}
+/****************** Medium devices Only **************/
+@media (min-width: 992px) and (max-width: 1199px){
+}
+/****************** Small devices Only **************/
+@media (min-width: 768px) and (max-width: 1199px){
+}
+/****************** Extra Small devices Only **************/
+@media (max-width: 767px){
+}
+```
