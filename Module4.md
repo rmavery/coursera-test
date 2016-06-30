@@ -1,7 +1,6 @@
 # JavaScript
 
 
-
 ## Defining Variables, Functions, Scope
 ### Variables are dynamically typed
 
