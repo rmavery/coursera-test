@@ -90,3 +90,21 @@
 @media (max-width: 767px){
 }
 ```
+* Font Size (vw) = Viewport Width
+  * 1vw = 1% of viewport width
+ 
+##Coding the Jumbotron 
+```
+<div id="main-content" class="container">
+ <div class="Jumbotron">
+ <img src="images/jumbotron.jpg" class="img-responsive visible-xs">
+ </div>
+</div>
+```
+* You can't easily stretch and contract the image when the screen size changes in the 'jumbotron' if you are using a 'Background Image'.   
+* Recommend using an '<img' tag for the smallest with the class 'img-responsive'. Then set different image sizes in the different @media queries using the background image 
+* Position: Relative will set up an 'anchor' for all child elements contained within that element.  
+
+## Coding the Footer
+
+
